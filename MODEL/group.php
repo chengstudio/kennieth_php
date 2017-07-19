@@ -1,5 +1,6 @@
 <?php 
 	namespace MODEL;
+	use COMMON\core;
 
 	class group{
 		static function test(){

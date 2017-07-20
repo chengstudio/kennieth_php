@@ -4,8 +4,6 @@
 	use COMMON\tools;
 	use DB\database;
 
-	require_once($_SERVER["DOCUMENT_ROOT"]."/COMMON/tools.php");
-
 	class group{
 		static function test(){
 			$database = $GLOBALS["db"];
@@ -21,7 +19,7 @@
 			);
 			database::de64_fileds($datas,["group_name","group_address"]);
 
-			tools::print_p($datas);
+			tools::pp($datas);
 
 		}
 	}

@@ -4,7 +4,10 @@
 	use COMMON\tools;
 	use COMMON\core;
 	use MODEL\group;      			
-	use SERVICE\service_test;		
+	use SERVICE\service_test;	
+	use Medoo\Medoo;
+
+	
 
 	class index extends page{
 

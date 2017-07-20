@@ -2,6 +2,9 @@
 	namespace COMMON;
 	use DB\database;
 
+	//composer依赖工具的autoload
+	require_once($_SERVER["DOCUMENT_ROOT"]."/MODEL/vendor/autoload.php");
+
 	class core{
 
 		function __construct(){

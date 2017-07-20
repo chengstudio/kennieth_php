@@ -1,7 +1,7 @@
 <?php
 namespace VIEW;  //视图层
 
-//页面工具
+//页面基类
 class page{	
 	
 	function __construct(){

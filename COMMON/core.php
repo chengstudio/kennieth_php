@@ -16,7 +16,6 @@
 		private function class_load(){
 			spl_autoload_register(function($class) {
 			  $class = str_replace('\\', '/', $class);
-			  //$class = str_replace('SYSTEM', '', $class);
 			  include $class.".php";
 			}, false);
 		}	

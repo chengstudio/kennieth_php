@@ -1,6 +1,6 @@
 <?php
 
-namespace MODEL;
+namespace COMMON;
 
 /**
  * An object-oriented wrapper of the PHP cURL extension.

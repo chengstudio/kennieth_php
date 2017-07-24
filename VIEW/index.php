@@ -1,14 +1,13 @@
 <?php
-	namespace VIEW;   //视图层
+	namespace VIEW;   												//视图层
+	require_once($_SERVER["DOCUMENT_ROOT"]."/VIEW/page.php");       //引入PAGE页面基类页面
 
-	use COMMON\tools;
-	use COMMON\core;
-	use MODEL\group;      			
-	use SERVICE\service_test;
-	use MODEL\Curl;	
+	use COMMON\core;				//核心类
+	use COMMON\tools;               //工具类
+	use COMMON\Curl;	            //CURL工具类
+	use MODEL\group;      			//模型类 
+	use SERVICE\service_test;       //服务类
 	use VIEW\page;
-
-	require_once("page.php");
 
 	class index extends page{
 

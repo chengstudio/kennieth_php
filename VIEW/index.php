@@ -6,6 +6,9 @@
 	use MODEL\group;      			
 	use SERVICE\service_test;
 	use MODEL\Curl;	
+	use VIEW\page;
+
+	require_once("page.php");
 
 	class index extends page{
 
@@ -15,7 +18,8 @@
 		}
 
 		static function getInstance(){
-			return new index;
+			$class = __CLASS__;
+			return new $class;
 		} 
 		
 		function pagetest(){

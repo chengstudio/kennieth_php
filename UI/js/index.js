@@ -5,7 +5,7 @@ $(function(){
 		data: {act: 'ajaxtest'},
 	})
 	.done(function(doc) {
-		
+		$('body').append(doc);
 	});
 	
 });

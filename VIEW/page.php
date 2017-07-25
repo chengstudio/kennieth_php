@@ -32,31 +32,31 @@ class page{
 		//额外添加
 		$js = array_merge($js,$add);
 		//遍历JS文件
-		$jsstr = "\n";
+		$jsstr = "";
 		foreach ($js as $key => $value) {
 			$jsstr .= "<script language='javascript' src='".$value."'></script>\n";
 		}
 
-		echo $jsstr;
+		return $jsstr;
 	}
 
 	//公共css
 	function commoncss($add=[]){
 		//修改此数组加入更多公共CSS
 		$css = array(			
-			"PAGE/js/jquery-PAGE/jquery-ui.min.css",		      //jquery-PAGE
+			"PAGE/js/jquery-ui/jquery-ui.min.css",		      //jquery-PAGE
 			"PAGE/style/core.css",					              //jquery样式定制
 			"PAGE/style/".$this::pagename().".css?t=".time(),     //页面CSS
 		);
 		//额外添加
 		$css = array_merge($css,$add);
 		//遍历CSS文件
-		$cssstr = "\n";
+		$cssstr = "";
 		foreach ($css as $key => $value) {
 			$cssstr .= "<link href='".$value."' rel='stylesheet' type='text/css' />\n";
 		}
 
-		echo $cssstr;		
+		return $cssstr;		
 	}
 	
 }

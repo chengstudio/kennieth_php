@@ -8,8 +8,8 @@
 	class core{
 
 		function __construct(){
-			$this->class_load();
-			$this->database_load();
+			$this->class_load();      //命名控件与物理路径对称 autoload
+			$this->database_load();   //生成数据库连接
 		}
 
 		//自动加载

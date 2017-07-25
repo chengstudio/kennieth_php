@@ -6,7 +6,18 @@
 	use DB\database;    //数据库类
 
 	class group{
-		static function test(){
+
+		//单例
+		static function getInstance(){
+			$class = __CLASS__;
+			return new $class;
+		} 
+
+		/**
+		 * 测试模型读取数据库
+		 * @return Array 数据库查询结果
+		 */
+		public function test(){
 			$database = $GLOBALS["db"];
 
 			$datas = $database->select("group_db",
@@ -18,11 +29,11 @@
 											"id[!]"=>1
 										]
 			);
-			database::de64_fileds($datas,["group_name","group_address"]);
+			database::de64_fields($datas,["group_name","group_address"]);
 
-			tools::pp($datas);
-
+			return $datas;
 		}
+
 	}
 
 ?>

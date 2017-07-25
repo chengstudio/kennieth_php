@@ -1,6 +1,6 @@
 <?php
 
-namespace CORE;
+namespace CORE;   //核心层
 
 /**
  * An object-oriented wrapper of the PHP cURL extension.

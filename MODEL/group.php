@@ -1,8 +1,9 @@
 <?php 
-	namespace MODEL;
-	use COMMON\core;
-	use COMMON\tools;
-	use DB\database;
+	namespace MODEL;     //模型层
+
+	use COMMON\core;     //核心类 
+	use COMMON\tools;    //工具类
+	use DB\database;     //数据库类
 
 	class group{
 		static function test(){

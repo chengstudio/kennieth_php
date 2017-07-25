@@ -22,7 +22,7 @@
 
 		//数据库加载
 		private function database_load(){
-			$database = new database;
+			$database = database::getInstance();
 		}
 
 	}

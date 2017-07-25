@@ -9,7 +9,12 @@
 			$this->create();
 		}
 
-		function create(){
+		static function getInstance(){
+			$class = __CLASS__;
+			return new $class;
+		} 
+
+		private function create(){
 			$GLOBALS["db"] = new Medoo([
 				'database_type' => 'mysql',
 				'database_name' => 'gfr',

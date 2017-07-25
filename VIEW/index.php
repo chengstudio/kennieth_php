@@ -13,7 +13,6 @@
 
 		function __construct(){
 			parent::__construct();  //调用父类构造
-			//$this->curl_sample();
 		}
 
 		static function getInstance(){
@@ -23,10 +22,14 @@
 		
 		function pagetest(){
 
-			group::test();
+			group::test();		    //调用模型类方法
 
 		}
 
+		/**
+		 * 测试CURL工具类
+		 * 
+		 */
 		function curl_sample(){
 
 			$agentid='WHlXMG0yaHBwd009';		                //默认是pc端的帐号,实例时可以另外填写其它的
@@ -48,7 +51,10 @@
 
 		}
 
-		//ajax调用
+		/**
+		 * ajax调用测试
+		 * @return
+		 */
 		static function ajaxtest(){
 			echo "123";
 		}

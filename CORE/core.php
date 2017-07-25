@@ -1,9 +1,9 @@
 <?php
-	namespace COMMON;
+	namespace CORE;		//核心层
 	use DB\database;
 
 	//composer依赖工具的autoload
-	require_once($_SERVER["DOCUMENT_ROOT"]."/COMMON/vendor/autoload.php");
+	require_once($_SERVER["DOCUMENT_ROOT"]."/CORE/vendor/autoload.php");
 	
 	class core{
 

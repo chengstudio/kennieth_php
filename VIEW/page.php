@@ -23,11 +23,11 @@ class page{
 	function commonjs($add=[]){
 		//修改此数组加入更多公共JS
 		$js = array(					
-			"UI/js/jquery.min.js",					          //jquery
-			"UI/js/jquery-ui/jquery-ui.min.js",               //jquery-ui
-			"UI/js/common.js?t=".time(),					  //公共JS
-			"UI/js/moment.js",								  //时间操作
-			"UI/js/".$this::pagename().".js?t=".time(),       //页面JS
+			"PAGE/js/jquery.min.js",					          //jquery
+			"PAGE/js/jquery-ui/jquery-ui.min.js",                 //jquery-ui
+			"PAGE/js/core.js",					                  //公共JS
+			"PAGE/js/moment.js",								  //时间操作
+			"PAGE/js/".$this::pagename().".js?t=".time(),         //页面JS
 		);
 		//额外添加
 		$js = array_merge($js,$add);
@@ -44,9 +44,9 @@ class page{
 	function commoncss($add=[]){
 		//修改此数组加入更多公共CSS
 		$css = array(			
-			"UI/js/jquery-ui/jquery-ui.min.css",		       //jquery-ui
-			"UI/style/".$this::pagename().".css?t=".time(),    //页面CSS
-			"UI/style/common.css"						       //jquery样式定制
+			"PAGE/js/jquery-PAGE/jquery-ui.min.css",		      //jquery-PAGE
+			"PAGE/style/core.css",					              //jquery样式定制
+			"PAGE/style/".$this::pagename().".css?t=".time(),     //页面CSS
 		);
 		//额外添加
 		$css = array_merge($css,$add);

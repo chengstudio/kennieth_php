@@ -1,6 +1,6 @@
 <?php
 
-namespace COMMON;
+namespace CORE;
 
 /**
  * An object-oriented wrapper of the PHP cURL extension.

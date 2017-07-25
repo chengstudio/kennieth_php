@@ -1,5 +1,5 @@
 <?php 
-	namespace SERVICE;
+	namespace SERVICE;					//服务层
 
 	class service_test{
 		function __construct(){

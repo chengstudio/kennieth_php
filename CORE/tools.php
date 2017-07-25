@@ -1,5 +1,5 @@
 <?php 
-	namespace COMMON;
+	namespace CORE;     //核心层
 
 	class tools{
 		//格式化数据显示

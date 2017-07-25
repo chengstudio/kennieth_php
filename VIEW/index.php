@@ -2,19 +2,23 @@
 	namespace VIEW;   												//视图层
 	require_once($_SERVER["DOCUMENT_ROOT"]."/VIEW/page.php");       //引入PAGE页面基类页面
 
-	use COMMON\core;				//核心类
-	use COMMON\tools;               //工具类
-	use COMMON\Curl;	            //CURL工具类
+	use CORE\core;				//核心类
+	use CORE\tools;               //工具类
+	use CORE\Curl;	            //CURL工具类
 	use MODEL\group;      			//模型类 
 	use SERVICE\service_test;       //服务类
-	use VIEW\page;
+	use VIEW\page;                  //页面基类
 
 	class index extends page{
 
+		public $title;
+
 		function __construct(){
 			parent::__construct();  //调用父类构造
+			$title = "测试页面";
 		}
 
+		//单例
 		static function getInstance(){
 			$class = __CLASS__;
 			return new $class;
@@ -22,7 +26,9 @@
 		
 		function pagetest(){
 
-			group::test();		    //调用模型类方法
+			echo "PHP_FUNC:".__FUNCTION__."<br>";
+			//group::test();		    //调用模型层业务类
+			//$this->curl_sample()      //调用核心层工具类
 
 		}
 
@@ -56,9 +62,11 @@
 		 * @return
 		 */
 		static function ajaxtest(){
-			echo "123";
+			echo "AJAX_FUNC:".__FUNCTION__."<br>";
 		}
 
 	}
 	$page = index::getInstance(); 
+	$addcss = [];		           //添加css 
+	$addjs = [];		       	   //添加js
 ?>

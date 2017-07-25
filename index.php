@@ -1,5 +1,5 @@
 <?php
-    require_once($_SERVER["DOCUMENT_ROOT"]."/COMMON/core.php");
+    require_once($_SERVER["DOCUMENT_ROOT"]."/CORE/core.php");
 	require_once($_SERVER["DOCUMENT_ROOT"]."/VIEW/index.php");
 	$page->pagetest();
 ?>
@@ -7,17 +7,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
-	<?php
-		$addcss = [];		           //添加css 
-		$page->commoncss($addcss);     //css
-	?>
+	<title><?=$page->title?></title>
+	<?php $page->commoncss($addcss);//css?>
 </head>
 <body>
 
 </body>
-<?php 
-	$addjs = [];		       		   //添加js
-	$page->commonjs($addjs);           //js
-?>
+<?php $page->commonjs($addjs);//js?>
 </html>

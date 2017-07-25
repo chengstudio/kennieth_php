@@ -1,5 +1,6 @@
 <?php 
-	namespace DB;
+	namespace DB;				//数据库层
+
 	use DB\Medoo\Medoo;
 
 	require_once("Medoo.php");

@@ -6,6 +6,27 @@
  - 每个前台PHP页面对应一个后台PAGE类，这个与 ASP.NET WEBFORM 和 JSF BACKBEAN 有点类似
  - 每个前台PHP页面对应一个JS脚本模块(jquery自动函数)
  - 每个页面均加载一个JQUERY的AJAXSETUP配置，与后台PAGE类对应，以简化AJAX调用后台类方法的过程，这个借鉴了 ASP.NET JQUERY 框架[webmethod]特性的远程调用方法的模式
+ 
+### 命名空间结构
+```
+ 根--\
+     CORE         核心空间
+     CORE\core    核心类
+     CORE\tools   工具类
+     
+     DB           数据空间
+     DB\database  数据库类
+     DB\Medoo     第三方数据库HELPER
+     
+     MODEL        业务逻辑空间
+     MODEL\*      业务逻辑类
+     
+     SERVICE      服务空间
+     SERVICE\*    服务对接类，服务公开类
+     
+     VIEW         视图空间
+     VIEW\page    视图基类
+```
 
 ### 目录结构
 ```

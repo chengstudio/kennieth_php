@@ -1,9 +1,7 @@
 <?php 
-	namespace DB;				//数据库层
+	namespace DB;				  //数据库层
 
-	use DB\Medoo\Medoo;         //数据库工具类
-
-	require_once("Medoo.php");  //数据库工具类页面
+	use DB\Medoo;                 //数据库工具类
 
 	class database{
 		function __construct(){

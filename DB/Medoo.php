@@ -8,7 +8,7 @@
  * Released under the MIT license
  */
 
-namespace DB\Medoo;
+namespace DB;
 
 use PDO;
 use Exception;

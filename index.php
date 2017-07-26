@@ -1,5 +1,4 @@
 <?php
-    require_once($_SERVER["DOCUMENT_ROOT"]."/CORE/core.php");     //核心类
 	require_once($_SERVER["DOCUMENT_ROOT"]."/VIEW/index.php");    //页面对应视图类
 	//添加css
 	$addcss = [""];   

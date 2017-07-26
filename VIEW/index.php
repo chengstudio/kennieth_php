@@ -1,8 +1,7 @@
 <?php
 	namespace VIEW;   												//视图层
    
-    require_once($_SERVER["DOCUMENT_ROOT"]."/CORE/core.php");
-    require_once($_SERVER["DOCUMENT_ROOT"]."/DB/database.php");
+    require_once($_SERVER["DOCUMENT_ROOT"]."/CORE/core.php");       //引入核心类页面
 	require_once($_SERVER["DOCUMENT_ROOT"]."/VIEW/page.php");       //引入PAGE页面基类页面
 
 	use CORE\core;				    //核心类
@@ -32,7 +31,8 @@
 		 * @return
 		 */
 		function pagetest(){
-			//$this->curl_sample()                 //调用核心层工具类
+			echo "页面PHP方法调用：";
+			$this->curl_sample();                 //调用核心层工具类
 		}
 
 		/**
@@ -56,7 +56,7 @@
 
 			$datas = json_decode($curl->response,true);
 
-			tools::pp($datas);
+			tools::pp($datas["codedata"]["res_uid_str"]);
 
 		}
 

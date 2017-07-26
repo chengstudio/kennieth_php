@@ -118,6 +118,6 @@ function ajax_test(){
 	$page = index::getInstance(); 		       	   
 ?>
 
-//页面后台类------------
+//页面后台类-------------
 ```
 

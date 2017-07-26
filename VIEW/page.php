@@ -6,7 +6,7 @@ class page{
 	
 	function __construct(){
 		//判断是否ajax调用
-		if(isset($_POST['act'])){call_user_func(array("VIEW\\".$this->pagename(),$_POST['act']),'');}
+		if(isset($_POST['method'])){call_user_func(array("VIEW\\".$this->pagename(),$_POST['method']),'');}
 	}
 	
 	//页面名称

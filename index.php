@@ -15,6 +15,6 @@
 <?=$page->commonjs($addjs)?>
 </head>
 <body>
-
+<?php echo $page->pagetest(); ?>
 </body>
 </html>

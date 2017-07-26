@@ -17,7 +17,7 @@
 		 * 测试模型读取数据库
 		 * @return Array 数据库查询结果
 		 */
-		public function test(){
+		function test(){
 			$database = $GLOBALS["db"];
 
 			$datas = $database->select("group_db",

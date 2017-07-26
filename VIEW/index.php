@@ -1,5 +1,8 @@
 <?php
 	namespace VIEW;   												//视图层
+   
+    require_once($_SERVER["DOCUMENT_ROOT"]."/CORE/core.php");
+    require_once($_SERVER["DOCUMENT_ROOT"]."/DB/database.php");
 	require_once($_SERVER["DOCUMENT_ROOT"]."/VIEW/page.php");       //引入PAGE页面基类页面
 
 	use CORE\core;				    //核心类
@@ -16,8 +19,6 @@
 		function __construct(){
 			parent::__construct();  //调用父类构造
 			$this->title = "测试页面";
-
-			$this->pagetest();
 		}
 
 		//单例
@@ -31,9 +32,7 @@
 		 * @return
 		 */
 		function pagetest(){
-			//$group = group::getInstance();
-			//tools::pp($group->test());              //调用模型层业务类
-			//$this->curl_sample()                    //调用核心层工具类
+			//$this->curl_sample()                 //调用核心层工具类
 		}
 
 		/**
@@ -67,6 +66,15 @@
 		 */
 		static function ajaxtest(){
 			echo "AJAX_FUNC:".__FUNCTION__."<br>";
+		}
+
+		/**
+		 * ajax调用测试
+		 * @return
+		 */
+		static function ajaxtest2(){
+			$group = group::getInstance();
+			echo json_encode($group->test());
 		}
 
 	}

@@ -12,11 +12,20 @@
 			$this->database_load();   //生成数据库连接
 		}
 
+		/**
+		 * 单例
+		 * @return Object 单例对象
+		 */
+		static function getInstance(){
+			$class = __CLASS__;
+			return new $class;
+		} 
+
 		//自动加载
 		private function class_load(){
-			spl_autoload_register(function($class) {
+			spl_autoload_register(function($class) {	
 			  $class = str_replace('\\', '/', $class);
-			  include $class.".php";
+			  require_once($_SERVER["DOCUMENT_ROOT"]."/".$class.".php");
 			}, false);
 		}	
 
@@ -26,6 +35,6 @@
 		}
 
 	}
-	$core = new core;
+	$core = core::getInstance();
 
 ?>

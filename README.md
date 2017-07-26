@@ -32,8 +32,9 @@
 ```
 
 ### AJAX调用PHP后台方法示例
-```php
+```html
    //页面--------------
+
    <?php
     require_once($_SERVER["DOCUMENT_ROOT"]."/VIEW/index.php");    //页面对应视图类
     //添加css
@@ -52,6 +53,71 @@
    <body>
    </body>
    </html>
+
    //页面--------------
+```
+```javascript
+//JS-------------
+
+$(function(){
+	ajax_test();
+});
+
+function ajax_test(){
+	$.ajax({
+	 	dataType: 'html',
+	 	data: {method: 'ajaxtest2'},
+	}).done(function(doc) {
+		$('body').append("AJAX方法调用：<br>"+doc);
+	});
+}
+
+//JS-------------
+```
+```php
+//页面后台类------------
+
+<?php
+	namespace VIEW;   												//视图层
+   
+ require_once($_SERVER["DOCUMENT_ROOT"]."/CORE/core.php");       //引入核心类页面
+	require_once($_SERVER["DOCUMENT_ROOT"]."/VIEW/page.php");       //引入PAGE页面基类页面
+
+	use CORE\core;				            //核心类
+	use CORE\tools;               //工具类
+	use CORE\Curl;	               //CURL工具类
+	use MODEL\group;      			     //模型类 
+	use SERVICE\service_test;     //服务类
+	use VIEW\page;                //页面基类
+
+	class index extends page{
+
+		public $title;				           //页面标题
+
+		function __construct(){
+			parent::__construct();      //调用父类构造
+			$this->title = "测试页面";
+		}
+
+		//单例
+		static function getInstance(){
+			$class = __CLASS__;
+			return new $class;
+		}
+
+		/**
+		 * ajax调用测试
+		 * @return
+		 */
+		static function ajaxtest2(){
+			$group = group::getInstance();
+			echo json_encode($group->test());
+		}
+
+	}
+	$page = index::getInstance(); 		       	   
+?>
+
+//页面后台类------------
 ```
 

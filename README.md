@@ -31,7 +31,7 @@
      |所有PHP页面
 ```
 
-### AJAX调用PHP后台方法示例
+### AJAX调用PHP后台方法示例 - ajax调用后台类的ajaxtest2方法直接echo出结果
 ```html
    //页面--------------
 
@@ -78,24 +78,24 @@ function ajax_test(){
 //页面后台类------------
 
 <?php
-	namespace VIEW;   												//视图层
+	namespace VIEW;   						//视图层
    
- require_once($_SERVER["DOCUMENT_ROOT"]."/CORE/core.php");       //引入核心类页面
+        require_once($_SERVER["DOCUMENT_ROOT"]."/CORE/core.php");       //引入核心类页面
 	require_once($_SERVER["DOCUMENT_ROOT"]."/VIEW/page.php");       //引入PAGE页面基类页面
 
-	use CORE\core;				            //核心类
-	use CORE\tools;               //工具类
-	use CORE\Curl;	               //CURL工具类
-	use MODEL\group;      			     //模型类 
-	use SERVICE\service_test;     //服务类
-	use VIEW\page;                //页面基类
+	use CORE\core;				                        //核心类
+	use CORE\tools;                                                 //工具类
+	use CORE\Curl;	                                                //CURL工具类
+	use MODEL\group;      			                        //模型类 
+	use SERVICE\service_test;                                       //服务类
+	use VIEW\page;                                                  //页面基类
 
 	class index extends page{
 
-		public $title;				           //页面标题
+		public $title;				                //页面标题
 
 		function __construct(){
-			parent::__construct();      //调用父类构造
+			parent::__construct();                          //调用父类构造
 			$this->title = "测试页面";
 		}
 

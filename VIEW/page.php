@@ -25,6 +25,7 @@ class page{
 		$js = array(					
 			"PAGE/js/jquery.min.js",					          //jquery
 			"PAGE/js/jquery-ui/jquery-ui.min.js",                 //jquery-ui
+			"PAGE/js/bootstrap/js/bootstrap.min.js",              //bootstrap
 			"PAGE/js/core.js",					                  //公共JS
 			"PAGE/js/moment.js",								  //时间操作
 			"PAGE/js/".$this::pagename().".js?t=".time(),         //页面JS

@@ -52,14 +52,6 @@
 		 * @return
 		 */
 		static function ajaxtest(){
-			echo "AJAX_FUNC:".__FUNCTION__."<br>";
-		}
-
-		/**
-		 * ajax调用测试
-		 * @return
-		 */
-		static function ajaxtest2(){
 			$group = group::getInstance();
 			$data = $group->test();
 

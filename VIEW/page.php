@@ -60,5 +60,18 @@ class page{
 	}
 	
 }
+
+//------独立函数，替代或增强一些系统的基本操作--------
 	
+/**
+ * ajax返回
+ * @param  Array $data 需要返回到数组
+ * @return String 经过编码的JSON字符串
+ */
+function ajaxreturn($data){
+	echo json_encode($data);
+}
+
+//------独立函数，替代或增强一些系统的基本操作--------
+
 ?>

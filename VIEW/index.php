@@ -32,7 +32,10 @@
 		 */
 		function pagetest(){
 			echo "页面PHP方法调用：";
-			$this->curl_sample();                 //调用核心层工具类
+			$group = group::getInstance();
+			$data = $group->test();
+
+			tools::pp($data["codedata"]["title"]);
 		}
 
 		/**
@@ -41,23 +44,7 @@
 		 */
 		function curl_sample(){
 
-			$agentid='WHlXMG0yaHBwd009';		                //默认是pc端的帐号,实例时可以另外填写其它的
-			$securitycode='ee47ef1e7ca08f0a75756b8a9d597e88';	//默认是pc端的帐号
-
-			$param = ["cid"=>1];
-			$sign=md5($securitycode.'||'.json_encode($param));
 			
-			$curl = new Curl();
-			$curl->post('http://www.cctrip.cc/api/api_p.php?act=get_codedata_byid',[
-				'signature'=>$sign,
-				'agentid'=>$agentid,
-				'param'=>json_encode($param)
-			]);
-
-			$datas = json_decode($curl->response,true);
-
-			tools::pp($datas["codedata"]["res_uid_str"]);
-
 		}
 
 		/**
@@ -74,7 +61,9 @@
 		 */
 		static function ajaxtest2(){
 			$group = group::getInstance();
-			echo json_encode($group->test());
+			$data = $group->test();
+
+			ajaxreturn($data["codedata"]["title"]);
 		}
 
 	}

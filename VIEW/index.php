@@ -31,11 +31,11 @@
 		 * @return
 		 */
 		function pagetest(){
-			echo "页面PHP方法调用：";
+			echo "页面PHP方法调用：<br>";
 			$group = group::getInstance();
 			$data = $group->test();
 
-			tools::pp($data["codedata"]["title"]);
+			echo($data["codedata"]["title"]."<br><br>");
 		}
 
 		/**

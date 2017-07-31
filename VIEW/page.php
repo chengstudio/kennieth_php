@@ -45,7 +45,8 @@ class page{
 	function commoncss($add=[]){
 		//修改此数组加入更多公共CSS
 		$css = array(			
-			"PAGE/js/jquery-ui/jquery-ui.min.css",		      //jquery-PAGE
+			"PAGE/js/jquery-ui/jquery-ui.min.css",		          //jquery-ui
+			"PAGE/js/bootstrap/css/bootstrap.min.css",            //bootstrap
 			"PAGE/style/core.css",					              //jquery样式定制
 			"PAGE/style/".$this::pagename().".css?t=".time(),     //页面CSS
 		);

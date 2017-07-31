@@ -9,6 +9,6 @@ function ajax_test(){
 	 	dataType: 'html',
 	 	data: {method: 'ajaxtest'},
 	}).done(function(doc) {
-		$('body').append("AJAX方法调用：<br>"+doc);
+		//$('body').append("AJAX方法调用：<br>"+doc);
 	});
 }

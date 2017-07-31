@@ -1,7 +1,5 @@
  ## 关于日志模块的开发
- 
- <div style="background-color:green;color:white;padding:5px;border-radius:4px;">警告分级</div>
- 
+ - 警告分级
  - 原来状态（原值）
  - 改变后状态（改变后值）
  - 新创建（创建值）

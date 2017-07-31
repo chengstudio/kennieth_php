@@ -142,3 +142,5 @@ function ajax_test(){
 //页面后台类-------------
 ```
 
+### 第三方数据HELPER使用方法
+- [Medoo的主页](https://medoo.in/)

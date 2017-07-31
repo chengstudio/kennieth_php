@@ -145,3 +145,7 @@ function ajax_test(){
 ### 第三方数据HELPER使用方法
 - [Medoo的主页](https://medoo.in/)
 - [Medoo的GITHUB](https://github.com/catfan/Medoo)
+
+### 第三方CURL类使用方法
+- [Curl的GITHUB](https://github.com/php-mod/curl)
+- [Curl的COMPOSER](https://packagist.org/packages/curl/curl)

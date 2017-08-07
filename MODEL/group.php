@@ -15,8 +15,8 @@
 		} 
 
 		/**
-		 * 测试模型读取数据库
-		 * @return Array 数据库查询结果
+		 * 测试模型层方法调用
+		 * @return Array
 		 */
 		function test(){
 			$agentid='WHlXMG0yaHBwd009';		                //默认是pc端的帐号,实例时可以另外填写其它的

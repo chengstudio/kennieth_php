@@ -80,12 +80,8 @@
 </div>
 	
 <?=$page->commonjs($addjs)?>
-
-<div class="container-fluid">
-<?php
-	$page->dbtest();
-?>
-</div>
-
 </body>
 </html>
+<?php
+	//$page->dbtest();
+?>

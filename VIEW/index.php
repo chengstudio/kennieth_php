@@ -39,6 +39,15 @@
 		}
 
 		/**
+		 *	测试数据库
+		 */
+		function dbtest(){
+			$database = $GLOBALS["db"];
+			$data = $database->select("group_db","*");
+			tools::pp($data);
+		}
+
+		/**
 		 * 测试CURL工具类
 		 * 
 		 */

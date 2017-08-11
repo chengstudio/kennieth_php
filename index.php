@@ -12,10 +12,10 @@
 </head>
 <body>
 
-<div class=".container-fluid">
+<div class=".container">
 		
 	<nav class="navbar navbar-default">
-		<div class=".container-fluid">
+		<div class=".container">
 			<div class=".navbar-header">
 				<a class="navbar-brand" href="#">KENNY-PHP</a>
 			</div>
@@ -38,7 +38,9 @@
 						 	</span>
 						</button>
 						<span class="badge alert-danger">99</span>
-						<ul class="dropdown-menu">
+						<ul class="dropdown-menu btn-badge-menu">
+							<li><a href="#">SET1</a></li>
+							<li><a href="#">SET1</a></li>
 							<li><a href="#">SET1</a></li>
 						</ul>
 					</li>
@@ -48,7 +50,9 @@
 						 	</span>
 						</button>
 						<span class="badge alert-danger">99</span>
-						<ul class="dropdown-menu">
+						<ul class="dropdown-menu btn-badge-menu">
+							<li><a href="#">SET1</a></li>
+							<li><a href="#">SET1</a></li>
 							<li><a href="#">SET1</a></li>
 						</ul>
 					</li>
@@ -58,7 +62,10 @@
 						 	</span>
 						</button>
 						<span class="badge alert-danger">99</span>
-						<ul class="dropdown-menu">
+						<ul class="dropdown-menu btn-badge-menu">
+							<li><a href="#">SET1</a></li>
+							<li><a href="#">SET1</a></li>
+							<li><a href="#">SET1</a></li>
 							<li><a href="#">SET1</a></li>
 						</ul>
 					</li>

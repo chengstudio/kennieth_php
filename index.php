@@ -12,74 +12,137 @@
 </head>
 <body>
 
-<div class="header">
-
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">KENNY-PHP</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-left">
-            <li class="dropdown">
-				<button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown"> 
-				 	<span class="glyphicon glyphicon-list">
-				 	</span>
-				</button>
-				<span class="badge alert-danger">12</span>
-				<ul class="dropdown-menu">
-					<div class="notify-arrow notify-arrow-red"></div>
-					<div class="notify-div notify-div-red text-white">待处理订单12个</div>
-					<li><a href="#">list1</a></li>
-					<li><a href="#">list2</a></li>
-					<li><a href="#">list3</a></li>
-				</ul>
-			</li>
-			<li class="dropdown">
-				<button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown"> 
-				 	<span class="glyphicon glyphicon-bell">
-				 	</span>
-				</button>
-				<span class="badge alert-danger">9</span>
-				<ul class="dropdown-menu">
-					<div class="notify-arrow notify-arrow-red"></div>
-					<div class="notify-div notify-div-red text-white">待处理客户留言9个</div>
-					<li><a href="#">SET1</a></li>
-					<li><a href="#">SET1</a></li>
-					<li><a href="#">SET1</a></li>
-				</ul>
-			</li>
-			<li class="dropdown">
-				<button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown"> 
-				 	<span class="glyphicon glyphicon-envelope">
-				 	</span>
-				</button>
-				<span class="badge alert-danger">9</span>
-				<ul class="dropdown-menu">
-					<div class="notify-arrow notify-arrow-red"></div>
-					<div class="notify-div notify-div-red text-white">待处理系统信息9条</div>
-					<li><a href="#">SET1</a></li>
-					<li><a href="#">SET1</a></li>
-					<li><a href="#">SET1</a></li>
-					<li><a href="#">SET1</a></li>
-				</ul>
-			</li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-</div>
-
-<div class="right">
+<div class="header .container-fluid">
 	
+	<div class="top">
+
+		<div class="logo">
+			KENNY-PHP
+		</div>
+
+		<div class="dropdown">
+			<button type="button" class="ms-btn btn btn-default dropdown-toggle" data-toggle="dropdown"> 
+			 	<span class="glyphicon glyphicon-list">
+			 	</span>
+			</button>
+			<span class="badge alert-danger">12</span>
+			<ul class="dropdown-menu">
+				<div class="notify-arrow notify-arrow-red"></div>
+				<div class="notify-div notify-div-red text-white">待处理订单12个</div>
+				<li><a href="#">list1</a></li>
+				<li><a href="#">list2</a></li>
+				<li><a href="#">list3</a></li>
+			</ul>
+		</div>
+
+		<div class="dropdown">
+			<button type="button" class="ms-btn btn btn-default dropdown-toggle" data-toggle="dropdown"> 
+			 	<span class="glyphicon glyphicon-bell">
+			 	</span>
+			</button>
+			<span class="badge alert-danger">9</span>
+			<ul class="dropdown-menu">
+				<div class="notify-arrow notify-arrow-red"></div>
+				<div class="notify-div notify-div-red text-white">待处理客户留言9个</div>
+				<li><a href="#">SET1</a></li>
+				<li><a href="#">SET1</a></li>
+				<li><a href="#">SET1</a></li>
+			</ul>
+		</div>
+
+		<div class="dropdown">
+			<button type="button" class="ms-btn btn btn-default dropdown-toggle" data-toggle="dropdown"> 
+			 	<span class="glyphicon glyphicon-envelope">
+			 	</span>
+			</button>
+			<span class="badge alert-danger">9</span>
+			<ul class="dropdown-menu">
+				<div class="notify-arrow notify-arrow-red"></div>
+				<div class="notify-div notify-div-red text-white">待处理系统信息9条</div>
+				<li><a href="#">SET1</a></li>
+				<li><a href="#">SET1</a></li>
+				<li><a href="#">SET1</a></li>
+				<li><a href="#">SET1</a></li>
+			</ul>
+		</div>
+	</div>
+
 </div>
+
+
+<div class="content container-fluid">
+	
+    <div class="row affix-row">
+	    <div class="col-md-2 affix-sidebar">
+			<div class="sidebar-nav">
+				<div class="navbar navbar-default" role="navigation">
+				    <div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						</button>
+						<span class="visible-xs navbar-brand">Sidebar menu</span>
+				    </div>
+				    <div class="navbar-collapse collapse sidebar-navbar-collapse">
+				        <ul class="nav navbar-nav" id="sidenav01">
+					        <li>
+					          <a href="#" data-toggle="collapse" data-target="#toggleDemo" data-parent="#sidenav01" class="collapsed">
+					          <span class="glyphicon glyphicon-cloud"></span> Submenu 1 <span class="caret pull-right"></span>
+					          </a>
+					          <div class="collapse" id="toggleDemo" style="height: 0px;">
+					            <ul class="nav nav-list">
+					              <li><a href="#">Submenu1.1</a></li>
+					              <li><a href="#">Submenu1.2</a></li>
+					              <li><a href="#">Submenu1.3</a></li>
+					            </ul>
+					          </div>
+					        </li>
+					        <li class="active">
+					          <a href="#" data-toggle="collapse" data-target="#toggleDemo2" data-parent="#sidenav01" class="collapsed">
+					          <span class="glyphicon glyphicon-inbox"></span> Submenu 2 <span class="caret pull-right"></span>
+					          </a>
+					          <div class="collapse" id="toggleDemo2" style="height: 0px;">
+					            <ul class="nav nav-list">
+					              <li><a href="#">Submenu2.1</a></li>
+					              <li><a href="#">Submenu2.2</a></li>
+					              <li><a href="#">Submenu2.3</a></li>
+					            </ul>
+					          </div>
+					        </li>
+					        <li><a href="#"><span class="glyphicon glyphicon-lock"></span> Normalmenu</a></li>
+					        <li><a href="#"><span class="glyphicon glyphicon-calendar"></span> WithBadges <span class="badge pull-right">42</span></a></li>
+					        <li><a href=""><span class="glyphicon glyphicon-cog"></span> PreferencesMenu</a></li>
+				      	</ul>
+				    </div><!--/.nav-collapse -->
+				</div>
+	  		</div>
+	    </div>
+
+	    <div class="col-md-10 affix-content">
+			<div class="row">
+				<div class="col_1 col-md-4">
+					<div class="col_1_content">
+						1111111
+					</div>
+				</div>
+				<div class="col_1 col-md-4">
+					<div class="col_1_content">
+						2222222
+					</div>
+				</div>
+				<div class="col_1 col-md-4">
+					<div class="col_1_content">
+						3333333
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
 
 <?=$page->commonjs($addjs)?>
 </body>

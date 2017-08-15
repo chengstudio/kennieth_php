@@ -5,9 +5,10 @@ body{
   height:100%;
 }
 
+/*带三角箭头菜单*/
 .notify-arrow{
 	margin-left:10px;
-	margin-top:-6px;
+	margin-top:-11px;
 	width: 0;
 	height: 0;
 	border-style: solid;
@@ -30,12 +31,21 @@ body{
 .text-white{
 	color:white;
 }
+/*带三角箭头菜单*/
 
-.header .navbar-right{margin-right:5px;}
-.header .navbar-brand{font-weight:bold;}
-.header span.alert-danger{background-color:#EF5350;color:white;}
-.header span.badge{margin-top:-24px;margin-left:-18px}
-.header button.navbar-btn{
+
+/*顶栏*/
+.header{ 
+	height:48px;
+	background-color:#f8f8f8;
+	/*border-top:1px solid #cccccc;*/ 
+	border-bottom:1px solid #cccccc;
+}
+/*顶栏*/
+/*顶栏按钮菜单*/
+span.alert-danger{background-color:#EF5350;color:white;}
+span.badge{margin-top:-14px;margin-left:-18px}
+button.ms-btn{
 	margin-left:10px;
 	margin-top:15px;
 	padding-left:5px;
@@ -43,11 +53,105 @@ body{
 	padding-top:2px;
 	padding-bottom:2px;
 }
-.header .navbar-nav>li>.dropdown-menu{
+.logo{margin-left:10px;margin-top:6px;font-weight:bold;font-size:24px;color:#666666;}
+.logo , .top>.dropdown{
+  float:left;margin-right:0px;
+}
+.top>div>.dropdown-menu{
 	padding:0px;
 	margin-left:10px;
-	margin-top:0px;
+	margin-top:12px;
 	border-radius:4px;
 	border:0px;
 }
-.header .navbar-nav>li>ul>li{border-top:1px solid #eeeeee;}
+.top>div>ul>li{border-top:1px solid #eeeeee;}
+
+@media (max-width:768px){
+  .top>.dropdown{display:none;}
+}
+
+/*顶栏按钮菜单*/
+
+/*主内容*/
+.content{margin-top:5px;padding:0px;padding-right:5px;}
+/*主内容*/
+
+/*第一行*/
+.col_1{
+  padding-right:0px;
+  padding-left:5px;
+  padding-bottom:5px;
+}
+.col_1_content{
+  background-color:#f8f8f8;
+  height:280px;
+  border-radius:8px;
+}
+
+ 
+/* make sidebar nav vertical */ 
+@media (min-width: 768px){
+  .sidebar-nav{
+        /*position:fixed;*/ 
+        /*width:auto;*/
+  }
+  .sidebar-nav span.badge{margin:0px;}
+  .affix-sidebar{
+    padding-right:0; 
+    font-size:small;
+    padding-left: 0;
+  }  
+  .affix-row, .affix-container{
+    height: 100%;
+    margin-left: 0;
+    margin-right: 0;    
+  } 
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar{
+    border-radius:0; 
+    margin-bottom:0; 
+    border:0;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }  
+}
+
+@media (min-width: 769px){
+  
+}
+
+@media (min-width: 992px){
+ 
+}
+
+@media (min-width: 1220px){
+  .affix-row{
+    overflow: hidden;
+  }
+  .navbar-nav {
+    margin: 0;
+  }
+  .navbar-collapse{
+    padding: 0;
+  }
+  .sidebar-nav .navbar li a:hover {
+    background-color: #428bca;
+    color: white;
+  }
+  .sidebar-nav .navbar li a > .caret {
+    margin-top: 8px;
+  }  
+}

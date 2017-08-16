@@ -18,6 +18,7 @@
 	<div class="top">
 
 		<div class="logo">
+			<span class="sh-menu glyphicon glyphicon-align-justify"></span>
 			KENNY-PHP
 		</div>
 
@@ -100,7 +101,7 @@
 					            </ul>
 					          </div>
 					        </li>
-					        <li class="active">
+					        <li>
 					          <a href="#" data-toggle="collapse" data-target="#toggleDemo2" data-parent="#sidenav01" class="collapsed">
 					          <span class="glyphicon glyphicon-inbox"></span> Submenu 2 <span class="caret pull-right"></span>
 					          </a>
@@ -125,22 +126,18 @@
 			<div class="row">
 				<div class="col_1 col-md-3">
 					<div class="col_1_content">
-						1111111
 					</div>
 				</div>
 				<div class="col_1 col-md-3">
 					<div class="col_1_content">
-						2222222
 					</div>
 				</div>
 				<div class="col_1 col-md-3">
 					<div class="col_1_content">
-						3333333
 					</div>
 				</div>
 				<div class="col_1 col-md-3">
 					<div class="col_1_content">
-						4444444
 					</div>
 				</div>
 			</div>

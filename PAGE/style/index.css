@@ -3,6 +3,7 @@ body{
   margin-right:auto;
   margin-left:auto;
   height:100%;
+  background-color:#f8f8f8;
 }
 
 a{color:#666666;}
@@ -41,7 +42,7 @@ a{color:#666666;}
 	height:48px;
 	background-color:#ffffff;
 	/*border-top:1px solid #cccccc;*/ 
-	border-bottom:2px solid #eeeeee;
+	border-bottom:0px solid #eeeeee;
 }
 /*顶栏*/
 /*顶栏按钮菜单*/
@@ -55,8 +56,8 @@ button.ms-btn{
 	padding-top:2px;
 	padding-bottom:2px;
 }
-.logo{margin-left:10px;margin-top:6px;font-weight:bold;font-size:24px;color:#666666;}
-.logo , .top>.dropdown{
+.logo{float:left;margin-right:42px;margin-left:20px;margin-top:15px;font-weight:bold;font-size:18px;color:#666666;}
+.top>.dropdown{
   float:left;margin-right:0px;
 }
 .top>div>.dropdown-menu{
@@ -70,6 +71,7 @@ button.ms-btn{
 
 @media (max-width:768px){
   .top>.dropdown{display:none;}
+  .sh-menu{display:none;}
 }
 
 /*顶栏按钮菜单*/
@@ -85,11 +87,23 @@ button.ms-btn{
   padding-bottom:5px;
 }
 .col_1_content{
-  background-color:#f8f8f8;
+  background-color:#ffffff;
   height:280px;
   border-radius:8px;
 }
 
+.affix-sidebar{
+  padding-right:0px;
+}
+.sidebar-nav{
+  width:100%;
+}
+.sidebar-nav .navbar{
+    background-color:white;
+    float: none;
+    display: block;
+    margin-bottom:5px;
+  }
  
 /* make sidebar nav vertical */ 
 @media (min-width: 768px){
@@ -118,13 +132,17 @@ button.ms-btn{
     display: block;
   }
   .sidebar-nav .navbar li {
+    background-color:white;
     float: none;
     display: block;
   }
   .sidebar-nav .navbar li a {
     padding-top: 12px;
     padding-bottom: 12px;
-  }  
+  }
+  .nav-list{
+    padding-left:30px;
+  }
 }
 
 @media (min-width: 769px){

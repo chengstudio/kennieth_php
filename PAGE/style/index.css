@@ -5,6 +5,8 @@ body{
   height:100%;
 }
 
+a{color:#666666;}
+
 /*带三角箭头菜单*/
 .notify-arrow{
 	margin-left:10px;
@@ -37,9 +39,9 @@ body{
 /*顶栏*/
 .header{ 
 	height:48px;
-	background-color:#f8f8f8;
+	background-color:#ffffff;
 	/*border-top:1px solid #cccccc;*/ 
-	border-bottom:1px solid #cccccc;
+	border-bottom:2px solid #eeeeee;
 }
 /*顶栏*/
 /*顶栏按钮菜单*/
@@ -91,10 +93,6 @@ button.ms-btn{
  
 /* make sidebar nav vertical */ 
 @media (min-width: 768px){
-  .sidebar-nav{
-        /*position:fixed;*/ 
-        /*width:auto;*/
-  }
   .sidebar-nav span.badge{margin:0px;}
   .affix-sidebar{
     padding-right:0; 

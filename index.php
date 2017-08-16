@@ -6,6 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta charset="utf-8">
 <title><?=$page->title?></title>
 <?=$page->commoncss($addcss)?>
@@ -122,19 +123,24 @@
 
 	    <div class="col-md-10 affix-content">
 			<div class="row">
-				<div class="col_1 col-md-4">
+				<div class="col_1 col-md-3">
 					<div class="col_1_content">
 						1111111
 					</div>
 				</div>
-				<div class="col_1 col-md-4">
+				<div class="col_1 col-md-3">
 					<div class="col_1_content">
 						2222222
 					</div>
 				</div>
-				<div class="col_1 col-md-4">
+				<div class="col_1 col-md-3">
 					<div class="col_1_content">
 						3333333
+					</div>
+				</div>
+				<div class="col_1 col-md-3">
+					<div class="col_1_content">
+						4444444
 					</div>
 				</div>
 			</div>

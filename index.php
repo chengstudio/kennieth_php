@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<div class="header .container-fluid">
+<div class="header">
 	
 	<div class="top">
 
@@ -85,7 +85,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						</button>
-						<span class="visible-xs navbar-brand">Sidebar menu</span>
+						<span class="visible-xs navbar-brand">菜单</span>
 				    </div>
 				    <div class="navbar-collapse collapse sidebar-navbar-collapse">
 				        <ul class="nav navbar-nav" id="sidenav01">
@@ -114,7 +114,7 @@
 					          </div>
 					        </li>
 					        <li><a href="#"><span class="glyphicon glyphicon-lock"></span> Normalmenu</a></li>
-					        <li><a href="#"><span class="glyphicon glyphicon-calendar"></span> WithBadges <span class="badge pull-right">42</span></a></li>
+					        <li><a href="#"><span class="glyphicon glyphicon-calendar"></span> WithBadges <span class="badge alert-danger pull-right">42</span></a></li>
 					        <li><a href=""><span class="glyphicon glyphicon-cog"></span> PreferencesMenu</a></li>
 				      	</ul>
 				    </div><!--/.nav-collapse -->

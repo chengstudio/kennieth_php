@@ -1,15 +1,15 @@
 <?php
-	namespace VIEW;   												//视图层
+	namespace PRESENTER;   												//视图层
    
     require_once($_SERVER["DOCUMENT_ROOT"]."/CORE/core.php");       //引入核心类页面
-	require_once($_SERVER["DOCUMENT_ROOT"]."/VIEW/page.php");       //引入PAGE页面基类页面
+	require_once($_SERVER["DOCUMENT_ROOT"]."/PRESENTER/page.php");       //引入PAGE页面基类页面
 
 	use CORE\core;				    //核心类
 	use CORE\tools;                 //工具类
 	use CORE\Curl;	                //CURL工具类
 	use MODEL\group;      			//模型类 
 	use SERVICE\service_test;       //服务类
-	use VIEW\page;                  //页面基类
+	use PRESENTER\page;                  //页面基类
 
 	class index extends page{
 

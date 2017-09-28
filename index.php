@@ -1,5 +1,5 @@
 <?php
-	require_once($_SERVER["DOCUMENT_ROOT"]."/VIEW/index.php");    //页面对应视图类
+	require_once($_SERVER["DOCUMENT_ROOT"]."/PRESENTER/index.php");    //页面对应视图类
 	$addcss = [""];   //添加css   	
 	$addjs = [""];   //添加js
 ?>

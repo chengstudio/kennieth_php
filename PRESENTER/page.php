@@ -1,12 +1,12 @@
 <?php
-namespace VIEW;  //视图层
+namespace PRESENTER;  //视图层
 
 //页面基类
 class page{	
 	
 	function __construct(){
 		//判断是否ajax调用
-		if(isset($_POST['method'])){call_user_func(array("VIEW\\".$this->pagename(),$_POST['method']),'');}
+		if(isset($_POST['method'])){call_user_func(array("PRESENTER\\".$this->pagename(),$_POST['method']),'');}
 	}
 	
 	//页面名称
@@ -14,7 +14,7 @@ class page{
 		$pagename = "";
 		$pagename = isset($_SERVER['PHP_SELF']) ? $_SERVER['PHP_SELF'] : (isset($_SERVER['SCRIPT_NAME']) ? $_SERVER['SCRIPT_NAME'] : $_SERVER['ORIG_PATH_INFO']);
 		$pagename = str_replace(".php","",str_replace("/","",$pagename));
-		$pagename = str_replace("VIEW","",$pagename);
+		$pagename = str_replace("PRESENTER","",$pagename);
 
 		return $pagename;
 	}

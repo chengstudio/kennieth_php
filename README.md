@@ -24,8 +24,8 @@
      SERVICE      服务空间
      SERVICE\*    服务对接类，服务公开类
      
-     VIEW         视图空间
-     VIEW\page    视图基类
+     PRESENTER         视图空间
+     PRESENTER\page    视图基类
 ```
 
 ### 目录结构
@@ -43,7 +43,7 @@
      |
      |---SERVICE|-对外提供服务或接入第三方服务类
      |
-     |------VIEW|-页面后台类
+     |------PRESENTER|-页面后台类
      |          |-page.php 后台类基类
      |
      |------PAGE|-[js目录] javascript脚本
@@ -57,7 +57,7 @@
    //页面--------------
 
    <?php
-    require_once($_SERVER["DOCUMENT_ROOT"]."/VIEW/index.php");    //页面对应视图类
+    require_once($_SERVER["DOCUMENT_ROOT"]."/PRESENTER/index.php");    //页面对应视图类
     //添加css
     $addcss = [""];   
     //添加js
@@ -99,17 +99,17 @@ function ajax_test(){
 //页面后台类------------
 
 <?php
-	namespace VIEW;   						//视图层
+	namespace PRESENTER;   						//视图层
    
         require_once($_SERVER["DOCUMENT_ROOT"]."/CORE/core.php");       //引入核心类页面
-	require_once($_SERVER["DOCUMENT_ROOT"]."/VIEW/page.php");       //引入PAGE页面基类页面
+	require_once($_SERVER["DOCUMENT_ROOT"]."/PRESENTER/page.php");       //引入PAGE页面基类页面
 
 	use CORE\core;				                        //核心类
 	use CORE\tools;                                                 //工具类
 	use CORE\Curl;	                                                //CURL工具类
 	use MODEL\group;      			                        //模型类 
 	use SERVICE\service_test;                                       //服务类
-	use VIEW\page;                                                  //页面基类
+	use PRESENTER\page;                                                  //页面基类
 
 	class index extends page{
 

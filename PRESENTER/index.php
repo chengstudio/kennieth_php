@@ -9,13 +9,13 @@
 	use CORE\Curl;	                //CURL工具类
 	use MODEL\group;      			//模型类 
 	use SERVICE\service_test;       //服务类
-	use PRESENTER\page;                  //页面基类
+	use PRESENTER\page;             //页面基类
 
 	class index extends page{
 
 		public $title;				//页面标题
 
-		function __construct(){
+		function __construct(){				
 			parent::__construct();  //调用父类构造
 			$this->title = "测试页面";
 		}

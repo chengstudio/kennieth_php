@@ -10,19 +10,19 @@
 ### 命名空间结构
 ```
  根--\
-     CORE         核心空间
-     CORE\core    核心类
-     CORE\tools   工具类
+     CORE              核心空间
+     CORE\core         核心类
+     CORE\tools        工具类
      
-     DB           数据空间
-     DB\database  数据库类
-     DB\Medoo     第三方数据库HELPER
+     DB                数据空间
+     DB\database       数据库类
+     DB\Medoo          第三方数据库HELPER
      
-     MODEL        业务逻辑空间
-     MODEL\*      业务逻辑类
+     MODEL             业务逻辑空间
+     MODEL\*           业务逻辑类
      
-     SERVICE      服务空间
-     SERVICE\*    服务对接类，服务公开类
+     SERVICE           服务空间
+     SERVICE\*         服务对接类，服务公开类
      
      PRESENTER         视图空间
      PRESENTER\page    视图基类
@@ -43,7 +43,7 @@
      |
      |---SERVICE|-对外提供服务或接入第三方服务类
      |
-     |------PRESENTER|-页面后台类
+     |-PRESENTER|-页面后台类
      |          |-page.php 后台类基类
      |
      |------PAGE|-[js目录] javascript脚本

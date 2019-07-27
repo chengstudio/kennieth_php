@@ -25,9 +25,9 @@
 			$GLOBALS["db"] = new Medoo([
 				'database_type' => 'mysql',
 				'database_name' => 'gfr',
-				'server' => '127.0.0.1',
+				'server' => 'localhost',
 				'username' => 'root',
-				'password' => '',
+				'password' => 'root',
 				'charset' => 'utf8'
 			]);
 		}
